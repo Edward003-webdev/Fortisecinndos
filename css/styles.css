@@ -288,6 +288,10 @@ a:hover {
   flex-wrap: wrap;
   gap: var(--spacing-md);
 }
+.footer-direction {
+  display: flex;
+  gap: var(--spacing-md);
+}
 .footer-links {
   display: flex;
   gap: var(--spacing-md);
