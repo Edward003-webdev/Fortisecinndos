@@ -94,6 +94,7 @@ a:hover {
 }
 .btn-quote:hover {
   background-color: var(--color-accent-hover);
+  color: var(--color-text) !important;
 }
 .hero {
   padding: var(--spacing-xxl) 0;
