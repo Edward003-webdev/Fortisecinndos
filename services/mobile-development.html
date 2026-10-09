@@ -20,6 +20,7 @@
   <meta name="twitter:description" content="Mobile app development services in Kenya. We build delivery apps, booking apps, customer apps and business applications.">
   <meta name="twitter:image" content="https://www.fortisecinndos.com/assets/images/og-image.jpg">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <nav class="navbar">
@@ -27,6 +28,11 @@
       <a href="../index.html" class="navbar-logo">
         <img src="../assets/images/logo.png" alt="Fortisec Inndos Logo">
       </a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="navbar-nav">
         <a href="../index.html">Home</a>
         <a href="index.html">Services</a>
@@ -102,7 +108,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-direction">
-          <p style="color: var(--color-text-secondary); margin-top: 8px;">Office 310, St Georges House<br>Parliament Road, Nairobi<br>Monday - Friday, 9am - 5pm</p>
+          <p>Office 310, St Georges House<br>Parliament Road, Nairobi<br>Monday - Friday, 9am - 5pm</p>
         </div>
         <div class="footer-links">
           <a href="../about.html">Company</a>
@@ -111,29 +117,41 @@
           <a href="../contact.html">Contact</a>
         </div>
         <div class="footer-social">
-          <a href="https://wa.me/14155552671?text=Hi%2C%20I%27d%20like%20to%20know%20more" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            WhatsApp
+          <a href="https://wa.me/14155552671?text=Hi%2C%20I%27d%20like%20to%20know%20more"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
           </a>
           <a href="mailto:support@inndos.com?subject=Enquiry&body=Hi%2C%20I%27d%20like%20to%20know%20more"
             target="_blank"
-            rel="noopener noreferrer">
-            Email
+            rel="noopener noreferrer"
+            aria-label="Email">
+            <i class="fas fa-envelope"></i>
           </a>
           <a href="https://www.linkedin.com/in/your-username"
             target="_blank"
-            rel="noopener noreferrer">
-            LinkedIn
+            rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/your-username"
             target="_blank"
-            rel="noopener noreferrer">
-            GitHub
+            rel="noopener noreferrer"
+            aria-label="GitHub">
+            <i class="fab fa-github"></i>
           </a>
         </div>
       </div>
     </div>
   </footer>
+  <script>
+    function toggleMenu() {
+      const hamburger = document.querySelector('.hamburger');
+      const nav = document.querySelector('.navbar-nav');
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
